@@ -22,3 +22,9 @@ RUN sudo apt-get update
 # Install the latest version of PostgreSQL.
 # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
 RUN sudo apt-get -y install postgresql
+
+# create environment variables
+
+ENV POSTGRES_DB postgresdb
+ENV POSTGRES_USER admin
+ENV POSTGRES_PASSWORD learntousesecrets
